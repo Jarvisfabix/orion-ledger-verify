@@ -1,0 +1,66 @@
+{
+  "schema": "orion-audit-ledger/v1",
+  "standard": "EU AI Act Art. 12, Art. 19(1), Art. 26(6) & Art. 73",
+  "signatureAlgorithm": "ECDSA-P256-SHA256",
+  "issuer": "AI Synapse Technologies Reference Sample (https://orion.aisynapse.tech)",
+  "deployerPublicKeyPem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExKx092UkKwXVMEbW1GMin5llGtph\nxyYQt6mJcu2WOGDcTv2yTboGo2pj5kBmnOC8D+OHznLNIct64Y1zB1N07A==\n-----END PUBLIC KEY-----\n",
+  "receipts": [
+    {
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "payload": {
+        "seq": 1,
+        "timestampUtc": "2026-11-25T09:14:02.411Z",
+        "tenantId": "gov_cat_social_04",
+        "aiSystemId": "ai_grant_assist_v2",
+        "riskTier": "ANNEX_III_HIGH_RISK",
+        "friaRef": "FRIA-2026-0118",
+        "policyBundleHash": "d6bc3cfdf5099cbda23908d73fdce58893c2c11165538537bc1008c8f2cf050f",
+        "promptHashSha256": "c2e5d3bfba5691d95295d65006dbe0361ec97dac0c51167e688286efcd160344",
+        "verdict": "AUTHORIZED",
+        "piiRedactions": 3,
+        "modelRouted": "mistral-large-eu-sovereign",
+        "art50Disclosed": true
+      },
+      "entryHash": "59d52e23176e9a152ae63a251ae801cfd300a3a2be38ab19b25f5550648959b3",
+      "signatureBase64": "MEQCICBrwo8BmDdPD8ENZ+1Pz7w7+mGqjrqLW71EsJR51jfBAiADFrnGyfX48Ayl1L9YlQcnbePu62vZeihbKveGMVx31g=="
+    },
+    {
+      "prevHash": "59d52e23176e9a152ae63a251ae801cfd300a3a2be38ab19b25f5550648959b3",
+      "payload": {
+        "seq": 2,
+        "timestampUtc": "2026-11-25T09:16:48.902Z",
+        "tenantId": "mun_bcn_housing_02",
+        "aiSystemId": "ai_housing_ranker_v1",
+        "riskTier": "ANNEX_III_HIGH_RISK",
+        "friaRef": "FRIA-2025-0082-EXPIRED",
+        "policyBundleHash": "d6bc3cfdf5099cbda23908d73fdce58893c2c11165538537bc1008c8f2cf050f",
+        "promptHashSha256": "fb12e95235a169e8c49fc5f8240b044935f32b1e1a630138e6e1a9a3361dd039",
+        "verdict": "BLOCKED_GATE_03_FRIA_EXPIRED",
+        "piiRedactions": 0,
+        "modelRouted": "NONE_FAIL_CLOSED",
+        "art50Disclosed": false
+      },
+      "entryHash": "6e2963e1989d66fa13a910924f69810af7f46914482cacba08cec95a131a1e76",
+      "signatureBase64": "MEQCID4Lp5ghTapIjONMf56nd4Ma3YoJbPbKIvR/CtZfgsdoAiA8RZEF5ElCQTCnX4E3YC75ePaYz0HfREty55y+eaJ66Q=="
+    },
+    {
+      "prevHash": "6e2963e1989d66fa13a910924f69810af7f46914482cacba08cec95a131a1e76",
+      "payload": {
+        "seq": 3,
+        "timestampUtc": "2026-11-25T09:21:11.150Z",
+        "tenantId": "fin_eu_retail_bank_09",
+        "aiSystemId": "ai_credit_copilot_v3",
+        "riskTier": "ANNEX_III_5B_CREDIT",
+        "friaRef": "FRIA-2026-0412",
+        "policyBundleHash": "d2016cc998c82aaab1d3673db196ff5ec765a3e6562755b0d8185876e3faca69",
+        "promptHashSha256": "149aa56bdd995bfc86ce91609affacbee3b02e733927b7be3f0ee011e804c8d5",
+        "verdict": "BLOCKED_GATE_06_ADVERSARIAL",
+        "piiRedactions": 0,
+        "modelRouted": "NONE_FAIL_CLOSED",
+        "art50Disclosed": false
+      },
+      "entryHash": "13449a6097e1c9cebbf07038416828fa6d5b12728398e6f43421780d32b77332",
+      "signatureBase64": "MEUCIHsFmHVr322ibv8zzMHHnKaue3G4+6N2U+Ay/eeZv3zWAiEAqUCJWsafIL2EAhIJLF3YZvB5n7d8pSuuFvyrTEcnZiU="
+    }
+  ]
+}
