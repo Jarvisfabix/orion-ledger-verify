@@ -1,0 +1,29 @@
+{
+  "name": "@aisynapse/orion-ledger-verify",
+  "version": "1.0.0",
+  "description": "Zero-dependency independent CLI verifier for ECDSA P-256 + SHA-256 hash-chained AI audit ledgers aligned with EU AI Act Art. 12, Art. 26(6) & Art. 73.",
+  "type": "module",
+  "bin": {
+    "orion-ledger-verify": "./bin/orion-verify.mjs"
+  },
+  "scripts": {
+    "verify:sample": "node ./bin/orion-verify.mjs ./examples/sample-chain.json",
+    "generate:sample": "node ./bin/orion-verify.mjs --generate-sample ./examples/sample-chain.json"
+  },
+  "keywords": [
+    "eu-ai-act",
+    "article-12",
+    "audit-trail",
+    "ecdsa",
+    "sha256",
+    "ai-governance",
+    "orion-trust-os",
+    "ai-synapse"
+  ],
+  "author": "Alejandro Fabián <alejandrofabian@aisynapse.tech> (https://alejandrofabian.aisynapse.tech)",
+  "homepage": "https://orion.aisynapse.tech/compliance",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
